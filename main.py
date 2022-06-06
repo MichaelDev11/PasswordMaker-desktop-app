@@ -9,6 +9,7 @@ def main():
     root.title("PassGenerator")
     root.geometry("300x200")
 
+    #This function here creates a file if it is not already existing and also creates the passwords to be stored in the file
     def Generate():
             date = datetime.datetime.now()
             password = ""
@@ -63,7 +64,7 @@ def main():
 
     includee = IntVar()
     
-
+    # These are important to allow the specific labels and entries to be included on the GUI for the user to interact with.
     includeSpecsBox = tk.Checkbutton(root, variable=includee, text="Include Special Characters", onvalue=1, offvalue=0)
     includeSpecsBox.pack()
 
